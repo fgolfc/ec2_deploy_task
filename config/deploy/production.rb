@@ -1,8 +1,8 @@
 server "13.231.229.32",
-  user: "ec2-user",
+  user: "dic_sample",
   roles: %w{web db app},
   ssh_options: {
-    user: "ec2-user", # overrides user setting above
+    user: "dic_sample", # overrides user setting above
     keys: %w(~/.ssh/aws_deploy_tasks.pem),
     forward_agent: false,
     auth_methods: %w(publickey password)
